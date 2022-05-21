@@ -94,6 +94,7 @@ body {
 .wait {cursor: wait;}
 .zoom-in {cursor: zoom-in;}
 .zoom-out {cursor: zoom-out;}
+.upload-example {cursor:url('./red_border;blue-green-checker_center.cur'),auto;}
 </style>
   <p onclick='document.getElementById("all").style.cursor = "alias";closeNav();' class="alias">alias</p>
 <p onclick='document.getElementById("all").style.cursor = "all-scroll";closeNav();' class="all-scroll">all-scroll</p>
@@ -131,6 +132,7 @@ body {
 <p onclick='document.getElementById("all").style.cursor = "zoom-in";closeNav();' class="zoom-in">zoom-in</p>
 <p onclick='document.getElementById("all").style.cursor = "zoom-out";closeNav();' class="zoom-out">zoom-out</p>
 <p onclick='var url = window.prompt("enter a url for your cursor");document.getElementById("all").style.cursor = "url("+url+"),auto";'>custom url (try a file)</p>
+<p onclick='var cursor = "./red_border;blue-green-checker_center.cur"; document.getElementById("all").style.cursor = "url("+cursor+"),auto";closeNav();' class="upload-example">example of custom url</p>
 </div>
 
 <div id="main">
