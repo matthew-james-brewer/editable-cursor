@@ -129,6 +129,7 @@ body {
 <p onclick='document.getElementById("all").style.cursor = "wait";closeNav();' class="wait">wait</p>
 <p onclick='document.getElementById("all").style.cursor = "zoom-in";closeNav();' class="zoom-in">zoom-in</p>
 <p onclick='document.getElementById("all").style.cursor = "zoom-out";closeNav();' class="zoom-out">zoom-out</p>
+<p onclick='var url = window.prompt("enter a url for your cursor");document.getElementById("all").style.cursor = "url("+url+"),auto";'>custom url (try a file)</p>
 </div>
 
 <div id="main">
