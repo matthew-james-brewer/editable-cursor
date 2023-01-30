@@ -2,100 +2,13 @@
 <html id='all'>
 <head>
     <title>Editable Cursor &lt;html&gt; slides</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  color: #FFFFFF;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="slide.css">
 </head>
 <body>
 <button onclick='window.open("./","_self")'>Home</button>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <style>
-.alias {cursor: alias;}
-.all-scroll {cursor: all-scroll;}
-.auto {cursor: auto;}
-.cell {cursor: cell;}
-.context-menu {cursor: context-menu;}
-.col-resize {cursor: col-resize;}
-.copy {cursor: copy;}
-.crosshair {cursor: crosshair;}
-.default {cursor: default;}
-.e-resize {cursor: e-resize;}
-.ew-resize {cursor: ew-resize;}
-.grab {cursor: -webkit-grab; cursor: grab;}
-.grabbing {cursor: -webkit-grabbing; cursor: grabbing;}
-.help {cursor: help;}
-.move {cursor: move;}
-.n-resize {cursor: n-resize;}
-.ne-resize {cursor: ne-resize;}
-.nesw-resize {cursor: nesw-resize;}
-.ns-resize {cursor: ns-resize;}
-.nw-resize {cursor: nw-resize;}
-.nwse-resize {cursor: nwse-resize;}
-.no-drop {cursor: no-drop;}
-.none {cursor: none;}
-.not-allowed {cursor: not-allowed;}
-.pointer {cursor: pointer;}
-.progress {cursor: progress;}
-.row-resize {cursor: row-resize;}
-.s-resize {cursor: s-resize;}
-.se-resize {cursor: se-resize;}
-.sw-resize {cursor: sw-resize;}
-.text {cursor: text;}
-.w-resize {cursor: w-resize;}
-.wait {cursor: wait;}
-.zoom-in {cursor: zoom-in;}
-.zoom-out {cursor: zoom-out;}
-.upload-example {cursor:url('./red_border;blue-green-checker_center.cur'),auto;}
-</style>
    <button onclick='document.getElementById("all").style.cursor = "alias";closeNav();' class="alias">alias</button>
 <button onclick='document.getElementById("all").style.cursor = "all-scroll";closeNav();' class="all-scroll">all-scroll</button>
 <button onclick='document.getElementById("all").style.cursor = "auto";closeNav();' class="auto">auto</button>
@@ -142,103 +55,6 @@ body {
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial;
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-img {
-  vertical-align: middle;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-</style>
 <body>
 
 <h2 style="text-align:center">Slideshow Gallery</h2>
@@ -332,11 +148,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-</script>
 
-
-
-<script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
